@@ -57,12 +57,33 @@ export default function SimpleNavbar() {
         alignItems: 'center',
         height: '64px'
       }}>
+        {/* Logo - À gauche */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center'
+        }}>
+          <Link href="/" style={{ textDecoration: 'none' }}>
+            <img
+              src="/logo_am.png"
+              alt="Alexandra Martin Photography"
+              style={{
+                height: '40px',
+                width: 'auto',
+                transition: 'opacity 0.2s ease'
+              }}
+              onMouseOver={(e) => e.target.style.opacity = '0.8'}
+              onMouseOut={(e) => e.target.style.opacity = '1'}
+            />
+          </Link>
+        </div>
+
         {/* Desktop Menu - Centré */}
         <div style={{
           display: 'flex',
           gap: '2rem',
-          flex: 1,
-          justifyContent: 'center',
+          position: 'absolute',
+          left: '50%',
+          transform: 'translateX(-50%)',
           '@media (max-width: 768px)': { display: 'none' }
         }}>
           {menuItems.map((item) => (
@@ -114,22 +135,40 @@ export default function SimpleNavbar() {
           })}
         </div>
 
-        {/* Mobile menu button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          style={{
-            display: 'none',
-            '@media (max-width: 768px)': { display: 'block' },
-            background: 'none',
-            border: 'none',
-            fontSize: '1.5rem',
-            cursor: 'pointer',
-            color: '#404040',
-            marginLeft: 'auto'
-          }}
-        >
-          {isOpen ? '✕' : '☰'}
-        </button>
+        {/* Mobile: Logo et Menu Button */}
+        <div style={{
+          display: 'none',
+          '@media (max-width: 768px)': { 
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            width: '100%'
+          }
+        }}>
+          <Link href="/" style={{ textDecoration: 'none' }}>
+            <img
+              src="/logo_am.png"
+              alt="Alexandra Martin Photography"
+              style={{
+                height: '35px',
+                width: 'auto'
+              }}
+            />
+          </Link>
+          
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            style={{
+              background: 'none',
+              border: 'none',
+              fontSize: '1.5rem',
+              cursor: 'pointer',
+              color: '#404040'
+            }}
+          >
+            {isOpen ? '✕' : '☰'}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
