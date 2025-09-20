@@ -1,11 +1,12 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function About() {
   return (
     <>
       <Head>
         <title>À propos - Alexandra Martin</title>
-        <meta name="description" content="Découvrez l'histoire et la passion d'Alexandra Martin, photographe professionnelle" />
+        <meta name="description" content="Découvrez l&apos;histoire et la passion d&apos;Alexandra Martin, photographe professionnelle" />
       </Head>
 
       <div style={{ minHeight: '100vh', backgroundColor: 'white' }}>
@@ -58,9 +59,11 @@ export default function About() {
               overflow: 'hidden',
               boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
             }}>
-              <img
+              <Image
                 src="/autoportrait.jpg"
                 alt="Alexandra Martin"
+                width={400}
+                height={533}
                 style={{
                   width: '100%',
                   height: '100%',
@@ -87,7 +90,7 @@ export default function About() {
                 color: '#737373',
                 lineHeight: '1.7'
               }}>
-                Photographe passionnée depuis plus de 10 ans, j'ai développé un style unique 
+                Photographe passionnée depuis plus de 10 ans, j&apos;ai développé un style unique 
                 qui mélange modernité et intemporalité. Chaque projet est pour moi une nouvelle 
                 aventure créative.
               </p>
@@ -108,16 +111,16 @@ export default function About() {
                 lineHeight: '1.7',
                 marginBottom: '1rem'
               }}>
-                Diplômée de l'École Nationale Supérieure de la Photographie d'Arles, 
-                j'ai commencé ma carrière en tant qu'assistante auprès de grands noms 
-                de la photographie française. Cette expérience m'a permis d'affiner ma 
+                Diplômée de l&apos;École Nationale Supérieure de la Photographie d&apos;Arles, 
+                j&apos;ai commencé ma carrière en tant qu&apos;assistante auprès de grands noms 
+                de la photographie française. Cette expérience m&apos;a permis d&apos;affiner ma 
                 technique et de développer mon œil artistique.
               </p>
               <p style={{
                 color: '#737373',
                 lineHeight: '1.7'
               }}>
-                Aujourd'hui, je travaille en freelance et collabore avec des magazines, 
+                Aujourd&apos;hui, je travaille en freelance et collabore avec des magazines, 
                 des agences de publicité et des particuliers qui cherchent à immortaliser 
                 leurs moments les plus précieux.
               </p>
@@ -138,8 +141,8 @@ export default function About() {
                 lineHeight: '1.7'
               }}>
                 Je crois que chaque image doit raconter une histoire. Mon approche se base 
-                sur l'authenticité des émotions et la beauté des détails souvent négligés. 
-                J'aime jouer avec la lumière naturelle et créer des compositions qui 
+                sur l&apos;authenticité des émotions et la beauté des détails souvent négligés. 
+                J&apos;aime jouer avec la lumière naturelle et créer des compositions qui 
                 révèlent la personnalité de mes sujets.
               </p>
             </div>
@@ -181,7 +184,7 @@ export default function About() {
               10
             </div>
             <div style={{ color: '#737373', fontWeight: '500' }}>
-              Années d'expérience
+              Années d&apos;expérience
             </div>
           </div>
           <div>

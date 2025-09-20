@@ -92,7 +92,7 @@ export default function Contact() {
               lineHeight: '1.6'
             }}>
               Que ce soit pour un projet professionnel, personnel ou pour toute question, 
-              n'hésitez pas à me contacter. Je vous répondrai dans les plus brefs délais.
+              n&apos;hésitez pas à me contacter. Je vous répondrai dans les plus brefs délais.
             </p>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>

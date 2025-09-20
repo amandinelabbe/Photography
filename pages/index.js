@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -36,9 +37,9 @@ export default function Home() {
             maxWidth: '600px',
             margin: '0 auto 2rem auto'
           }}>
-            Capturer l'essence de l'instant avec un regard artistique et moderne
+            Capturer l&apos;essence de l&apos;instant avec un regard artistique et moderne
           </p>
-          <a 
+          <Link 
             href="/portfolio"
             style={{
               display: 'inline-block',
@@ -64,7 +65,7 @@ export default function Home() {
             }}
           >
             Voir le Portfolio
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -128,7 +129,7 @@ export default function Home() {
                 Créativité
               </h3>
               <p style={{ color: '#737373' }}>
-                Chaque photo est une œuvre d'art unique
+                Chaque photo est une œuvre d&apos;art unique
               </p>
             </div>
             
@@ -156,7 +157,7 @@ export default function Home() {
                 Passion
               </h3>
               <p style={{ color: '#737373' }}>
-                L'amour de la photographie guide chaque projet
+                L&apos;amour de la photographie guide chaque projet
               </p>
             </div>
             
